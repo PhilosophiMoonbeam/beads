@@ -80,7 +80,7 @@ The following index covers the complete architectural index and all sixteen numb
 | M13 | [13 Complete logical SDK, 1–34][M13] | Capability/method and error contracts. |
 | M14 | [14 Worked lifecycle, 1–17][M14] | Authentication migration, canary, compaction, settlement. |
 | M15 | [15 Conformance/readiness, 1–29][M15] | Sixteen adversarial demonstration areas and production prerequisites. |
-| M16 | [16 Design basis/refinements, 1–15][M16] | Nine v4 refinements, explicitly mapped below. |
+| M16 | [16 Design basis/refinements, 1–16][M16] | Ten v4 refinements (nine baseline plus backported F10 cross-planning ergonomics), explicitly mapped below. |
 
 ## Beads capability and gap matrix
 
@@ -649,6 +649,7 @@ Each numbered refinement from M16 has an explicit disposition; none is hidden as
 | F07 Autonomous frontier/interrupts | Adopt deterministic engine, synchronous piggybacked CLI progression + `--claim-next` on state-settling mutations, and nine named interrupts; optional background host supplies asynchronous invocation. | R09/R15; S12; W05/W07. |
 | F08 3D geometry/termination | Adapt as conditional typed child plans with opt-in strict ceilings, finite witnesses, reserves and bounded adaptation. Do not claim hashes solve natural-language equivalence. | R08/R14; S14; W08–W09. |
 | F09 Cross-depth concurrency/two channels/subleases/epochs | Adopt observable subtree fencing, parent wait release/delegation, separate output/diagnostic paths and child replan damper; model taint/frame claims conditional on actual runtime. No unmeasured constant-time claim. | R07/R11/R14; S11–S15; W08/W10. |
+| F10 Implicit determinism, `turnCursor`, entitlement planes, endpoint pinning & cross-surface portability | Backported bi-directionally between blankets and Mandala: bind omitted CAS/idempotency parameters to `turnCursor` / `.beads/plan-cursor.json`; support compound `validateAndFreeze({ activate: true })` / `--publish freeze --activate`, optional `reconcile` omission on settled transitions, synchronous post-activation admission, and `remedy` descriptors; partition `planops` into `Reader`/`Planner`/`Executor`/`Assurance`; pin remote endpoints in `~/.config/beads/trusted-endpoints.json`; preserve canonical bytes without `float64` coercion. | R01/R04/R10/R15; S05/S08/S09/S12; W01–W05. |
 
 ## Risks, open decisions and success experiments
 
@@ -727,7 +728,7 @@ Parent-reported gate observations before and during this authoring wave:
 | `./mint.sh validate` | Passed: `success build validation passed`. Published-site validation does not cover hidden `.research` source references. |
 | `./mint.sh broken-links` | Passed: `success no broken links found`. Published-site links are not this report's sibling/source-span links. |
 
-The docsync collector intentionally skips dot-directories, so this report under `.research` is unpublished and is not added to `docs/docs.json`. [B21] A separate report audit checked all 71 local source links and exact line ranges, all sixteen numbered Mandala sources, front matter and heading conventions, seven balanced text fences, and both illustrative JSON envelopes. Cross-document reviews accounted for all nineteen SDK families (48 methods), sixteen conformance areas, nine v4 refinements, and fifteen architectural decisions (D01–D15). These checks establish report integrity and reviewed design consistency, not implemented blankets behavior.
+The docsync collector intentionally skips dot-directories, so this report under `.research` is unpublished and is not added to `docs/docs.json`. [B21] A separate report audit checked all 71 local source links and exact line ranges, all sixteen numbered Mandala sources, front matter and heading conventions, seven balanced text fences, and both illustrative JSON envelopes. Cross-document reviews accounted for all nineteen SDK families (48 methods), sixteen conformance areas, ten v4 refinements (F01–F10, including the bi-directional Mandala backport), and fifteen architectural decisions (D01–D15). These checks establish report integrity and reviewed design consistency, not implemented blankets behavior.
 
 Secondary citation-grounding triage initially processed 63 cited units. For substantive reporting, 23 duplicate source-catalog rows were excluded; structural and uncited text was outside that audit's candidate set. The retained machine verdicts were:
 
@@ -802,7 +803,7 @@ Material Beads claims above use these exact source-local spans. Separate keys id
 [M13]: ../../../mandala/docs/13-logical-sdk-contract.md#L1-L34
 [M14]: ../../../mandala/docs/14-worked-lifecycle.md#L1-L17
 [M15]: ../../../mandala/docs/15-conformance-and-implementation-readiness.md#L1-L29
-[M16]: ../../../mandala/docs/16-design-basis-and-principal-refinements.md#L1-L15
+[M16]: ../../../mandala/docs/16-design-basis-and-principal-refinements.md#L1-L16
 [B00a]: ../../cmd/bd/version.go#L18-L21
 [B00b]: ../../docs/cli-docs.pin#L1-L12
 [B01]: ../../internal/types/types.go#L20-L140
